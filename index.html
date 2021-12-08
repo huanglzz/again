@@ -1,22 +1,10 @@
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script>
-jQuery(document).ready(function () {
-newTab();
-});
-
-function newTab() {
- var form = document.createElement("form");
- form.method = "GET";
- form.action = "https://huanglzz.github.io/again";
- form.target = "_blank";
- document.body.appendChild(form);
- form.submit();
-}
-</script>
+ <script>
+  function myfunction() {
+   window.open("https://huanglzz.github.io/again", '_blank');
+  }
 </head>
-<body>
-<a class="my-link">link</a>
+<body onload="myfunction()">
 </body>
 </html>
